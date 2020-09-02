@@ -17,23 +17,41 @@
         <h1>Twiddler</h1>
       </div>
     </header>
-    <script>
-
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
-
-      });
-
-    </script>
+    <div>
+      <main>
+        <script>
+          $(document).ready(function(){
+            var $main = $('main');
+            $main.html('');
+            // timestamp generator ================================================//
+            var index = streams.home.length - 1;
+            while(index >= 0){
+              var tweet = streams.home[index];
+              var $tweet = $('<div></div>');
+              var now = new Date();
+              var date = [ now.getMonth() + 1, now.getDate(), now.getFullYear() ];
+              var time = [ now.getHours(), now.getMinutes(), now.getSeconds() ];
+              var suffix = ( time[0] < 12 ) ? "AM" : "PM";
+              time[0] = ( time[0] < 12 ) ? time[0] : time[0] - 12;
+              time[0] = time[0] || 12;
+              for ( var i = 1; i < 3; i++ ) {
+                if ( time[i] < 10 ) {
+                  time[i] = "0" + time[i];
+                }
+              }
+              var timeStamp = date.join("/") + " " + time.join(":") + " " + suffix;
+              //end timestamp generator ===========================================//
+              $tweet.text('@' + tweet.user + ': ' + tweet.message + ' [' + timeStamp + ']');
+              $tweet.appendTo($main);
+              index -= 1;
+            }
+          });
+        </script>
+      </main>
+    </div>
+    <br>
+    <footer>
+      <small>&copy; Twiddler by dev.poston@gmail.com</small>
+    </footer>
   </body>
 </html>
