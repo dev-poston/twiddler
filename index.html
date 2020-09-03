@@ -6,42 +6,39 @@
     <script src="jquery.js"></script>
     <script src="dataGenerator.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <div class="logo">
-        <h1>Twiddler</h1>
+        <image class="icon" src="https://previews.123rf.com/images/ratoca/ratoca1411/ratoca141100141/33944858-shark-computer.jpg"></image>
+        <h1 class="animate__animated animate__slideInUp">Twiddler</h1>
+        <h6>It's what's happening... for SHARKS</h6>
       </div>
     </header>
-    <div>
-      <main>
+    <br>
+      <!-- shows the user new tweets -->
+      <div class="button">
+        <button class="button" onClick="window.location.reload();">Load More Twiddles</button>
+      </div>
+      <br>
+
+        <!-- <image class="ads" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSVC3FWZk15Zv3KGEIeKoNCJfMtzdASXEb3tQ&usqp=CAU"></image>
+        <image class="ads" src="https://woodardmarine.com/wp-content/uploads/2015/03/WOODARD-BIGGER-BOAT-SHARK-WEEK-AD-300x232.jpg"></image> -->
+
+    <div class="container">
+      <main class="tweet">
         <script>
           $(document).ready(function(){
             var $main = $('main');
             $main.html('');
-            // timestamp generator ================================================//
             var index = streams.home.length - 1;
             while(index >= 0){
               var tweet = streams.home[index];
               var $tweet = $('<div></div>');
-              var now = new Date();
-              var date = [ now.getMonth() + 1, now.getDate(), now.getFullYear() ];
-              var time = [ now.getHours(), now.getMinutes(), now.getSeconds() ];
-              var suffix = ( time[0] < 12 ) ? "AM" : "PM";
-              time[0] = ( time[0] < 12 ) ? time[0] : time[0] - 12;
-              time[0] = time[0] || 12;
-              for ( var i = 1; i < 3; i++ ) {
-                if ( time[i] < 10 ) {
-                  time[i] = "0" + time[i];
-                }
-              }
-              var timeStamp = date.join("/") + " " + time.join(":") + " " + suffix;
-              //end timestamp generator ===========================================//
-              $tweet.text('@' + tweet.user + ': ' + tweet.message + ' [' + timeStamp + ']');
+              // timestamp implemented
+              $tweet.text('@' + tweet.user + ': ' + tweet.message + ' [' + tweet.created_at + ']');
               $tweet.appendTo($main);
               index -= 1;
             }
@@ -50,7 +47,7 @@
       </main>
     </div>
     <br>
-    <footer>
+    <footer class="foot">
       <small>&copy; Twiddler by dev.poston@gmail.com</small>
     </footer>
   </body>
