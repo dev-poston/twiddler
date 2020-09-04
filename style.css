@@ -68,9 +68,8 @@ table {
   width: 200px;
   height: 150px;
   max-width: 70%;
+  min-width: 200px;
   line-height: 50px;
-  align-items: flex-start;
-  margin: 0 auto;
   font-size: 12px;
   text-align: center;
   color: black;
@@ -88,10 +87,34 @@ table {
   text-align: center;
   color: black;
   background-color: rgb(255, 255, 255);
-  border: 2px solid rgba(29, 160, 242, 0.753);
+  border: 3px solid rgba(29, 160, 242, 0.753);
   box-shadow: #ffffff88 0px 0px 40px 0px;
   border-radius: 10px;
   font-family: "Lexend Peta";
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  border: 0px solid #ffffff;
+  background: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d7d7d7));
+  background: -moz-linear-gradient(top, #ffffff, #d7d7d7);
+  background: linear-gradient(to bottom, #ffffff, #d7d7d7);
+  color: #111111;
+  text-decoration: none;
+}
+.button:active {
+  background: #b3b3b3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b3b3b3), to(#b3b3b3));
+  background: -moz-linear-gradient(top, #b3b3b3, #b3b3b3);
+  background: linear-gradient(to bottom, #b3b3b3, #b3b3b3);
+}
+.button:before{
+  content:  "\0000a0";
+  height: 24px;
+  width: 24px;
+  line-height: 12px;
+  margin: 0 auto;
 }
 .searchButton {
   max-width: 70%;
@@ -176,7 +199,7 @@ table {
 .notificationButton {
   max-width: 70%;
   text-align: center;
-  border: 3px solid rgba(29, 160, 242, 0.664);
+  border: 2px solid rgba(29, 160, 242, 0.664);
   border-radius: 10px;
   background: #ffffff;
   box-shadow: #ffffff83 0px 0px 40px 0px;
@@ -220,7 +243,6 @@ div {
   padding: 10px;
   margin: 0 auto;
   margin-bottom: 10px;
-
 }
 .container {
   width: 550px;
@@ -231,7 +253,6 @@ div {
   border-radius: 10px;
   padding: 10px;
   margin: 0 auto;
-  /* overflow: scroll; */
 }
 .logo {
   width: 400px;
@@ -267,7 +288,7 @@ h6 {
 }
 .foot {
   text-align: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.459);
   margin-bottom: 10px;
 }
 .tweetDate {
@@ -288,7 +309,7 @@ h6 {
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0);
   text-align: center;
-  min-width: 200px;
+  min-width: 300px;
 }
 .threeColumn {
   display: flex;
@@ -305,12 +326,11 @@ h6 {
   min-width: 200px;
 }
 .ads {
-  color: black;
+  color: rgba(255, 255, 255, 0.459);
   font-size: 16px;;
   text-align: center;
   max-width: 70%;
   margin-bottom: 10px;
-  /* margin-top: 30px; */
   border: none;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -319,5 +339,4 @@ h6 {
   max-height: 100%;
   border: none;
   background-color: rgba(255, 255, 255, 0);
-
 }
