@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Twiddler: SHARK Edition</title>
+    <script src="jquery.js"></script>
+    <script src="dataGenerator.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <image class="icon" src="https://previews.123rf.com/images/ratoca/ratoca1411/ratoca141100141/33944858-shark-computer.jpg"></image>
+        <h1 class="animate__animated animate__zoomIn">Twiddler</h1>
+        <h6>It's what's happening... for SHARKS</h6>
+      </div>
+    </header>
+    <br>
+    <div class="adsTop">
+      <image class="adsTop" src="sharkbanner.jpg"></image>
+    </div>
+    <br>
+      <!-- shows the user new tweets -->
+      <div class="buttonBox">
+        <button class="button" onClick="window.location.reload();">Load More Twiddles</button>
+      </div>
+      <br>
+        <!-- <div>
+
+        </div> -->
+  <div class="threeColumn">
+  <div class="left">
+    <div class="navBox">
+        <a class="searchButton" href="#" > Search</a>
+        <br>
+        <a class="messageButton" href="#"> Post</a>
+        <br>
+        <a class="notificationButton" href="#"> Notifications</a>
+
+    </div>
+  </div>
+    <div class="container">
+      <div class="a0 twid"><a class="c0 anchor" href=""></a><p class="b0"></p><p class="d0"></p></div>
+      <div class="a1 twid"><a class="c1 anchor" href=""></a><p class="b1"></p><p class="d1"></p></div>
+      <div class="a2 twid"><a class="c2 anchor" href=""></a><p class="b2"></p><p class="d2"></p></div>
+      <div class="a3 twid"><a class="c3 anchor" href=""></a><p class="b3"></p><p class="d3"></p></div>
+      <div class="a4 twid"><a class="c4 anchor" href=""></a><p class="b4"></p><p class="d4"></p></div>
+      <div class="a5 twid"><a class="c5 anchor" href=""></a><p class="b5"></p><p class="d5"></p></div>
+      <div class="a6 twid"><a class="c6 anchor" href=""></a><p class="b6"></p><p class="d6"></p></div>
+      <div class="a7 twid"><a class="c7 anchor" href=""></a><p class="b7"></p><p class="d7"></p></div>
+      <div class="a8 twid"><a class="c8 anchor" href=""></a><p class="b8"></p><p class="d8"></p></div>
+      <div class="a9 twid"><a class="c9 anchor" href=""></a><p class="b9"></p><p class="d9"></p></div>
+      <div class="a10 twid"><a class="c10 anchor" href=""></a><p class="b10"></p><p class="d10"></p></div>
+      <div class="a11 twid"><a class="c11 anchor" href=""></a><p class="b11"></p><p class="d11"></p></div>
+      <div class="a12 twid"><a class="c12 anchor" href=""></a><p class="b12"></p><p class="d12"></p></div>
+      <div class="a13 twid"><a class="c13 anchor" href=""></a><p class="b13"></p><p class="d13"></p></div>
+      <div class="a14 twid"><a class="c14 anchor" href=""></a><p class="b14"></p><p class="d14"></p></div>
+      <div class="a15 twid"><a class="c15 anchor" href=""></a><p class="b15"></p><p class="d15"></p></div>
+      <div class="a16 twid"><a class="c16 anchor" href=""></a><p class="b16"></p><p class="d16"></p></div>
+      <div class="a17 twid"><a class="c17 anchor" href=""></a><p class="b17"></p><p class="d17"></p></div>
+      <div class="a18 twid"><a class="c18 anchor" href=""></a><p class="b18"></p><p class="d18"></p></div>
+      <div class="a19 twid"><a class="c19 anchor" href=""></a><p class="b19"></p><p class="d19"></p></div>
+      <script>
+        $(document).ready(function(){
+          var now = new Date()
+          var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+          var weekdays = ['Sunday' + 'Monday', 'Tuesday', 'Wednesday', 'Thursday' + 'Friday' + 'Saturday']
+          var currentMonth = months[now.getMonth()];
+          var currentDay = now.getDate();
+          var currentHour = now.getHours();
+          var currentMinute = now.getMinutes();
+          var currentYear = now.getFullYear();
+          var fullDate = (currentMonth + " " + currentDay + ", " + currentYear + " " + currentHour + ":" + currentMinute);
+          for (var i = 0; i < 20; i++) {
+            $(".c" + i).attr('href', window.streams.home[i].user + ".html");
+            $(".c" + i).text("@" + window.streams.home[i].user + ":")
+            $(".b" + i).text(window.streams.home[i].message);
+            $(".d" + i).text(fullDate);
+            $(".d" + i).addClass("tweetDate");
+            $(".a" + i).addClass("sharks");
+          }
+        });
+      </script>
+    </div>
+    <div class="right">
+      <p class="ads">Sponsored Links</p>
+    <image class="ads" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSVC3FWZk15Zv3KGEIeKoNCJfMtzdASXEb3tQ&usqp=CAU"></image>
+    <image class="ads" src="https://woodardmarine.com/wp-content/uploads/2015/03/WOODARD-BIGGER-BOAT-SHARK-WEEK-AD-300x232.jpg"></image>
+    <image class="ads" src="https://i.pinimg.com/originals/1e/58/f1/1e58f1a9b635c088af58007d8dbda5e7.jpg"></image>
+    <image class="ads" src="https://i.pinimg.com/originals/4b/fc/83/4bfc8369240353bf88c1cec337f1a824.jpg"></image>
+    <image class="ads" src="https://images-na.ssl-images-amazon.com/images/I/51xrDR2sSUL._AC_.jpg"></image>
+    <image class="ads" src="https://3c72bdc4130407505543-14b18330fd9316e87d7f5109c743adf6.ssl.cf1.rackcdn.com/Clark-the-Shark-ad.jpg"></image>
+    </div>
+  </div>
+    <br>
+    <footer class="foot">
+      <small>&copy; SHARK Twiddler by dev.poston@gmail.com</small>
+    </footer>
+  </body>
+</html>

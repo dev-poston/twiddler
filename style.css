@@ -51,29 +51,195 @@ table {
   border-spacing: 0;
 }
 /* ========================================== */
-div {
-  width: 400px;
+.buttonBox {
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  font-size: 12px;;
+  text-align: center;
+  color: black;
+  background-color: rgba(29, 160, 242, 0.322);
+  box-shadow: #ffffff44 0px 0px 40px 0px;
+  border: 3px solid white;
+  border-radius: 10px;
+  font-family: "Lexend Peta";
+}
+.navBox {
+  width: 200px;
+  height: 150px;
+  max-width: 70%;
+  line-height: 50px;
+  align-items: flex-start;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: center;
+  color: black;
+  background-color: rgba(29, 160, 242, 0.322);
+  box-shadow: #ffffff44 0px 0px 40px 0px;
+  border: 3px solid white;
+  border-radius: 10px;
+  font-family: "Lexend Peta";
+}
+.button {
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  font-size: 12px;;
+  text-align: center;
+  color: black;
   background-color: rgb(255, 255, 255);
-  border: 3px solid rgb(29, 161, 242);
+  border: 2px solid rgba(29, 160, 242, 0.753);
+  box-shadow: #ffffff88 0px 0px 40px 0px;
+  border-radius: 10px;
+  font-family: "Lexend Peta";
+}
+.searchButton {
+  max-width: 70%;
+  text-align: center;
+  border: 2px solid rgba(29, 160, 242, 0.664);
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: #ffffff85 0px 0px 40px 0px;
+  font: 16px "Lexend Peta";
+  color: #000000;
+  text-decoration: none;
+}
+.searchButton:hover,
+.searchButton:focus {
+  border: 0px solid #ffffff;
+  background: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d7d7d7));
+  background: -moz-linear-gradient(top, #ffffff, #d7d7d7);
+  background: linear-gradient(to bottom, #ffffff, #d7d7d7);
+  color: #111111;
+  text-decoration: none;
+}
+.searchButton:active {
+  background: #b3b3b3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b3b3b3), to(#b3b3b3));
+  background: -moz-linear-gradient(top, #b3b3b3, #b3b3b3);
+  background: linear-gradient(to bottom, #b3b3b3, #b3b3b3);
+}
+.searchButton:before{
+  content:  "\0000a0";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  margin: 0 6px -6px 0px;
+  position: relative;
+  top: 0px;
+  left: 4px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACbklEQVRIibWVz2sTQRTHPzP9oYVW6raHUjwFkSIeTO0/oG4QPIiIVDyIdGMVD4L/QA966j/goYQkFgTBQkUUBLstlBaVXnKSkktQvIiUbYmHaGvnechuu9nspirNg4Hv7PvuvPe+82ZGAZo2WrC4SfCbw8DRCvRh4k4SbCCTPSoi48BNYBToRakNRN4DRRFxNxeL5qAKVEwFDNjOiCieI2ggB6yCqoIMAZeAu8BHYMJzC1tJSYYDBJG1ZTungGXgCUpNewv57VDJBsCynUGgCAwD5z23UI1yAqwaf5zoBvUBeOW5hcctEtNWJtuJyFugYsTc21p8auIC6NBEg7oGdKPU9P632IG3kP8tMAmMa6VT7Eutwzjcpga4AeR8WUzE14Q3j//4DLjA1SROdIPPAquheVKH1G1uzlDfr3STz7egTYNAvShVJaazYqzOUXgIvTRKtMeJSvRdiQzRQpYmLAwD35I40UxXpd7nhMiJuP+io4EMqOUkTvRoFwHHsh2L1l2kAa0VY8BpFG8SOeGIWmQNeAfkBu07UfkasGVnLWAWmPIW8tW/kmhjsWhAHgD9BvPasp0TTbJcyGrLdsZQsgKkgJ/HLt+Pu5Ub7qLgFAIwYGe7BXkEOMASsIJiy9/QDDACTAHbwAww6bmFF8RYhx9EQkPVKqWd2q0rSz1fq8+AI0Aa1BmgC3gJPPTcwlrXydFPWqigyPek0uVapbTuJyv+uiZ62f2XWbZznfp+3O7b2Z3/sjy7t164Au3jfx61Smm9J5UuK8j/6tDlWqVUDnwNXUSrA3UA7tvZnReYAM5FOO199MNPZtsCtfXR/wNsHfz/GqK58AAAAABJRU5ErkJggg==") no-repeat left center transparent;
+  background-size: 70% 70%;
+}
+.messageButton {
+  max-width: 70%;
+  text-align: center;
+  border: 2px solid rgba(29, 160, 242, 0.664);
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: #ffffff83 0px 0px 40px 0px;
+  font: 16px "Lexend Peta";
+  color: #000000;
+  text-decoration: none;
+}
+.messageButton:hover,
+.messageButton:focus {
+  border: 0px solid #ffffff;
+  background: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d7d7d7));
+  background: -moz-linear-gradient(top, #ffffff, #d7d7d7);
+  background: linear-gradient(to bottom, #ffffff, #d7d7d7);
+  color: #111111;
+  text-decoration: none;
+}
+.messageButton:active {
+  background: #b3b3b3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b3b3b3), to(#b3b3b3));
+  background: -moz-linear-gradient(top, #b3b3b3, #b3b3b3);
+  background: linear-gradient(to bottom, #b3b3b3, #b3b3b3);
+}
+.messageButton:before{
+  content:  "\0000a0";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  margin: 0 6px 6px 0px;
+  position: relative;
+  top: 0px;
+  left: 5px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADB0lEQVRIiaWWz2sTQRSAvxejSBGJETxIEa/GIFLUYrX+wEOMenK3gnhVEGGC6GlzC5UuHgTbBU/iH1CzPQhtanpQoVbsqYdAbx48SA9Rg4h6yvOwu+k0SUvRgWHfzLx578037w0rQIr/aI7xssAkcB34CTzTVHt8ZvJxG2AHIEA7/nY3e75HdkteVoQacB54AXwF7goymBsenV39uKiJA7V64lDj0/WV3ZKXQakrHAXGwsB/mhserUb75T4weOTkuVnbQdLssT3fkV3j7Ueoq5ADnDDwZwFWlxd1dXnxbW74bAq4LwLpeE/3PWx6L44pZxVqAkOgLRFp9tGvAHngXrLQjjt9xh3ZMeUM8BrIq+odlJZCzS2Vh2z9MPDbwBow0O25n6M4ci8LugAdLM+Bi6i2UBYc452wdK8Bt4EZ2QpH0lzjJVjyijhhMDFvGTsMLIhIBiiq6gHgJdBQtJA4sKO2xym35GVUWZA48mrgz3XrOMY7BLwBMsBuoCFCsTrlN/tl0YZsUaEO5GTdOF17ZHV58XtuePS3iIyJsCJCoTrlfwd0U0SuKWdBaxplgxMG/nw/vRjTlQRLHPm3ZM2u5E6huaacUagTFZETRpHbeh3ZMd7VxDhIMQz8pq3Tg8gx5f2gdVnPlgRLD8Y4W16CNIBCGPhfu3XS1kQqwkKNdePzmyG0sQDFMPBb/XQ7J3CMtxN4BQxZF7oNLPRgsWX7BOPABeCWlS09RZdgkch4oRqsX2g//XS86TjCA5Q/wKftYNEtsNgtWbyJ0hZYQ5h1S94Jut6ijnHZgKXnveqWU5eNARgBVoCLorRUee0Y71QvFmlIlC3NrbDYcmqAPbuBY8BSNfA/A5cEvgE1x3hnHeM9AEIRaRAVUYJlWz0lkBdhL8J7oJ04AX4B70CeAHOqWqhOTWwLiy2ngRGNSuiLY7wbwGmNkB0E1hB9mN+3a7pSqWyJYjM5LXBGo1p+LyKg+gNYUXiEMhkGfiuMNvzT30daYRBlGvigqksCDcnu+lONIt7wLP+L/BfbfYDOf9F9igAAAABJRU5ErkJggg==") no-repeat left center transparent;
+  background-size: 70% 70%;
+}
+.notificationButton {
+  max-width: 70%;
+  text-align: center;
+  border: 3px solid rgba(29, 160, 242, 0.664);
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: #ffffff83 0px 0px 40px 0px;
+  font: 16px "Lexend Peta";
+  color: #000000;
+  text-decoration: none;
+}
+.notificationButton:hover,
+.notificationButton:focus {
+  border: 0px solid #ffffff;
+  background: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d7d7d7));
+  background: -moz-linear-gradient(top, #ffffff, #d7d7d7);
+  background: linear-gradient(to bottom, #ffffff, #d7d7d7);
+  color: #111111;
+  text-decoration: none;
+}
+.notificationButton:active {
+  background: #b3b3b3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b3b3b3), to(#b3b3b3));
+  background: -moz-linear-gradient(top, #b3b3b3, #b3b3b3);
+  background: linear-gradient(to bottom, #b3b3b3, #b3b3b3);
+}
+.notificationButton:before{
+  content:  "\0000a0";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  margin: 0 4px -6px -4px;
+  position: relative;
+  top: 0px;
+  left: 4px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACDElEQVRIibWVv2sUQRTHP28IhwQbBwQJJILIod0hQRA0FpmkUYK1heL4F0gqKwkp/APkiqAuWsRey8sqJNooQUQMSAhplBRXrId2EWYsdvdud90fBHIPHnzv/bz5zts3AijGKGlxV+F3x4GLJ1DHjesa5EQba7SxpspfJlJXMJVT8/eUiHSA94npuvd8/vU2qKL2vwZpYPFOlDb2AvASOAl8AVHgO8Bv4G4UBt8L+TlcbJATbewUwkc8D51yrwa9Fw7g9OJ95Zy/7eExcCUKg59VDVJQqtrYNW3sao1/VRu7VlcjS0mqAE7P20lgCehm7QXcBZb0gp2siim74NgpzAL70eF0P2fPSPR3ug/s45ktqTPkqYqmSyDbbK2U+WPb5goI20CnpBbUUQRcBL9TYs9jz04ce0SKBM6D7BbtJXgXaFfFFD9tBaizc3eUhzb4PWomJFbZA2kz96h2inJH+9OamAEcSg6aKHJODsA73foxcxSKbgG9qPe8cVMO3j1zQC/JaaZIG3sOWAaeNNOTqNAVWE5yc77cqtDGbgCXgUNBPnjiZQXQhD3+KtACPkVhsJDWnchyIyLrwHqaiAcvgPc3gCkPT5NyDzx8Q9gYteI1yOjXaBqHJ6h7B84Am8BX4ATxWF6LwqBflTP801mKEindiNpYDdxM7G+iMBjUxWfxWB/97B2MrdFYH/1/VN/KFqiiW+QAAAAASUVORK5CYII=") no-repeat left center transparent;
+  background-size: 70% 70%;
+}
+div {
+  background-color: rgba(255, 255, 255, 0.836);
+  border: 3px solid rgba(29, 160, 242, 0.308);
   border-radius: 15px;
   padding: 10px;
   margin: 0 auto;
   margin-bottom: 10px;
+
 }
 .container {
-  width: 500px;
-  background-color: rgba(29, 160, 242, 0.336);
+  width: 550px;
+  max-height: 1800px;
+  background-color: rgba(29, 160, 242, 0.322);
+  box-shadow: #ffffff44 0px 0px 40px 0px;
   border: 3px solid white;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 10px;
   margin: 0 auto;
+  /* overflow: scroll; */
 }
 .logo {
   width: 400px;
-  margin: 0 auto;
+  margin-top: 20px;
   text-align: center;
-  border: 3px solid rgba(29, 160, 242, 0.336);
+  border: 3px solid rgba(29, 160, 242, 0.637);
   background-color: white;
+  box-shadow: #ffffff 0px 0px 40px 0px;
 }
 h1 {
   font-weight: bold;
@@ -94,28 +260,64 @@ h6 {
   margin: 0 auto;
   text-align: center;
 }
-.button {
-  width: 150px;
-  height: 40px;
-  margin: 0 auto;
-  font-size: 12px;;
-  text-align: center;
-  color: black;
-  background-color: rgb(255, 255, 255);
-  border: 3px solid rgba(29, 160, 242, 0.753);
-  border-radius: 15px;
-  font-family: "Lexend Peta";
-}
 .icon {
   height: 40px;
   width: 50px;
   display:inline-block;
 }
-.tweet {
-  font-family: Helvetica Neue;
-  font-size: 16px;
-}
 .foot {
   text-align: center;
   color: white;
+  margin-bottom: 10px;
+}
+.tweetDate {
+  color: gray;
+}
+.sharks {
+  width: 400px;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: #ffffff44 0px 0px 40px 0px;
+  border: 3px solid rgba(29, 160, 242, 0.637);
+}
+.left {
+  width: 30%;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  min-width: 200px;
+}
+.threeColumn {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+.right {
+  width: 30%;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  min-width: 200px;
+}
+.ads {
+  color: black;
+  font-size: 16px;;
+  text-align: center;
+  max-width: 70%;
+  margin-bottom: 10px;
+  /* margin-top: 30px; */
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.adsTop {
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+
 }
