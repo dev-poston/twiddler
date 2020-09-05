@@ -21,15 +21,28 @@
     <div class="adsTop">
       <image class="adsTop" src="sharkbanner.jpg"></image>
     </div>
-    <br>
       <!-- shows the user new tweets -->
       <div class="buttonBox">
-        <button class="button" onClick="window.location.reload();" href="#" >Load More Twiddles</button>
+      <script>
+        function fidSound() {
+         var audioElement = new Audio("jaws.mp3");
+         audioElement.play();
+        }
+        function reload() {
+        setTimeout(function () {window.location.reload();
+        },1700)
+        }
+      </script>
+      <button class="button" onClick="reload(); fidSound();">Refresh Feed</button>
+
+        <!-- <button class="button" onClick="window.location.reload();" href="#" >Update Twiddles</button> -->
       </div>
       <br>
   <div class="threeColumn">
   <div class="left">
     <div class="navBox">
+        <a class="homeButton" href="indexTest.html">Home</a>
+        <br>
         <a class="searchButton" href="#">Search</a>
         <br>
         <a class="messageButton" href="#">Post</a>

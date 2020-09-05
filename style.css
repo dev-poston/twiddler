@@ -66,7 +66,7 @@ table {
 }
 .navBox {
   width: 200px;
-  height: 150px;
+  height: 200px;
   max-width: 70%;
   min-width: 200px;
   line-height: 50px;
@@ -111,11 +111,52 @@ table {
 }
 .button:before{
   content:  "\0000a0";
-  height: 24px;
-  width: 24px;
+  height: 40px;
+  width: 150px;
   line-height: 12px;
   margin: 0 auto;
 }
+.homeButton {
+  max-width: 70%;
+  text-align: center;
+  border: 2px solid rgba(29, 160, 242, 0.664);
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: #ffffff85 0px 0px 40px 0px;
+  font: 16px "Lexend Peta";
+  color: #000000;
+  text-decoration: none;
+}
+.homeButton:hover,
+.homeButton:focus {
+  border: 0px solid #ffffff;
+  background: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d7d7d7));
+  background: -moz-linear-gradient(top, #ffffff, #d7d7d7);
+  background: linear-gradient(to bottom, #ffffff, #d7d7d7);
+  color: #111111;
+  text-decoration: none;
+}
+.homeButton:active {
+  background: #999999;
+  background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#ffffff));
+  background: -moz-linear-gradient(top, #999999, #ffffff);
+  background: linear-gradient(to bottom, #999999, #ffffff);
+}
+.homeButton:before{
+  content:  "\0000a0";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  margin: 0 6px -6px 0px;
+  position: relative;
+  top: 0px;
+  left: 4px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACSUlEQVRIibWVv2sUQRTHP288IYh6m6QQhMxeNhDwRxEiKjaKhfgXiIVgo0UQ/AOCYGOZP0AsLCLYCAGxsLCxEMTC2AhXHDi53WuiEM3Bgcep+yzu9m53b89TvHsw7Jvd73vzfd83MyuAYYqWJI9HfI8n4ecrMJP2/7TAf5uMShhYOyfIGmAUnrkorAW2cg7Uc1H46l8XSPTq92TR+hcN8khFd1HZAj0K3AI6wEvV+N5Oo9EuiM/4efbxACAADpX3oA+AM8B54CwwJ2LeBL6/PK6CA71MQ2PW8yzoGnAKuC/IuovC79+azR9HyuUXBmkBm7Nlb2/e8z5+bTYlpUrfz0sEYIIFewgjD1FOAzdcFFaLyg+svwxsAjURufsprLfGSUTg+6uIbKN8UZELveRQcFZcFNYUuQTsqup2YP3VPCazixYXKiURfQ1y0kX1+dHKDltg/T2giupl14h+9uVIsYt3GvWOYq4C7RTj+C/9NnDFNaJO+n0pz0RVY5H+NO6xKwG3gevAPrDhovBtGgO9jpKNzR9tIwOUSY07veTrdJv6dKnb4DSmKM6kP8RArKoZBr3nCYHHLgrfuSh8DnwAsTlMJk/ij7t3BoGSTiLFmILYdA8MQFci7c/7pgMMkptnzYyadEsrliiLGWYf070U85jhXfRL4nYJqQXW3xDkc5e8roB4S7ZyHECVZeDakq2sAKhwDNXqwZmZdn7x9FUxOHC24gl6E+QwCSopLPGTNiiAtoAnLgr384RhWMep/9EmakO7aBo2VYl+A4Mm34qoxtehAAAAAElFTkSuQmCC") no-repeat left center transparent;
+  background-size: 70% 70%;
+}
+
 .searchButton {
   max-width: 70%;
   text-align: center;
