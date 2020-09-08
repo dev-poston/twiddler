@@ -365,6 +365,8 @@ h6 {
   background-color: rgba(255, 255, 255, 0);
   text-align: center;
   min-width: 200px;
+  height: 1800px;
+  max-height: 70%;
 }
 .ads {
   color: rgba(255, 255, 255, 0.459);
