@@ -73,6 +73,7 @@ table {
   font-size: 12px;
   text-align: center;
   color: black;
+  margin: 0 auto;
   background-color: rgba(29, 160, 242, 0.322);
   box-shadow: #ffffff44 0px 0px 40px 0px;
   border: 3px solid white;
@@ -277,14 +278,13 @@ table {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACDElEQVRIibWVv2sUQRTHP28IhwQbBwQJJILIod0hQRA0FpmkUYK1heL4F0gqKwkp/APkiqAuWsRey8sqJNooQUQMSAhplBRXrId2EWYsdvdud90fBHIPHnzv/bz5zts3AijGKGlxV+F3x4GLJ1DHjesa5EQba7SxpspfJlJXMJVT8/eUiHSA94npuvd8/vU2qKL2vwZpYPFOlDb2AvASOAl8AVHgO8Bv4G4UBt8L+TlcbJATbewUwkc8D51yrwa9Fw7g9OJ95Zy/7eExcCUKg59VDVJQqtrYNW3sao1/VRu7VlcjS0mqAE7P20lgCehm7QXcBZb0gp2siim74NgpzAL70eF0P2fPSPR3ug/s45ktqTPkqYqmSyDbbK2U+WPb5goI20CnpBbUUQRcBL9TYs9jz04ce0SKBM6D7BbtJXgXaFfFFD9tBaizc3eUhzb4PWomJFbZA2kz96h2inJH+9OamAEcSg6aKHJODsA73foxcxSKbgG9qPe8cVMO3j1zQC/JaaZIG3sOWAaeNNOTqNAVWE5yc77cqtDGbgCXgUNBPnjiZQXQhD3+KtACPkVhsJDWnchyIyLrwHqaiAcvgPc3gCkPT5NyDzx8Q9gYteI1yOjXaBqHJ6h7B84Am8BX4ATxWF6LwqBflTP801mKEindiNpYDdxM7G+iMBjUxWfxWB/97B2MrdFYH/1/VN/KFqiiW+QAAAAASUVORK5CYII=") no-repeat left center transparent;
   background-size: 70% 70%;
 }
-div {
+/* div {
   background-color: rgba(255, 255, 255, 0.836);
   border: 3px solid rgba(29, 160, 242, 0.308);
   border-radius: 15px;
-  padding: 10px;
   margin: 0 auto;
   margin-bottom: 10px;
-}
+} */
 .container {
   width: 550px;
   max-height: 1800px;
@@ -299,6 +299,8 @@ div {
   width: 400px;
   margin-top: 20px;
   text-align: center;
+  border-radius: 15px;
+  margin: 0 auto;
   border: 3px solid rgba(29, 160, 242, 0.637);
   background-color: white;
   box-shadow: #ffffff 0px 0px 40px 0px;
@@ -332,22 +334,54 @@ h6 {
   color: rgba(255, 255, 255, 0.459);
   margin-bottom: 10px;
 }
-.tweetDate {
-  color: gray;
-}
 .sharks {
   width: 400px;
   font-family: Helvetica Neue;
   font-size: 16px;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-bottom: 10px;
   background-color: white;
   box-shadow: #ffffff44 0px 0px 40px 0px;
   border: 3px solid rgba(29, 160, 242, 0.637);
+}
+.shark {
+  width: 375px;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 15px;
+  margin: 5px 5px;
+  color: rgba(9, 83, 129, 0.747);
+  background-color: white;
+}
+.message {
+  width: 375px;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  border-radius: 15px;
+  margin: 5px 5px;
+  color: #000000;
+  background-color: white;
+}
+.date {
+  width: 375px;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  border-radius: 15px;
+  margin: 5px 5px;
+  color: #4d4d4d79;
+  background-color: white;
+}
+.hover {
+  color: green;
 }
 .left {
   width: 30%;
   margin: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
+  margin: 0 auto;
   background-color: rgba(255, 255, 255, 0);
   text-align: center;
   min-width: 300px;
