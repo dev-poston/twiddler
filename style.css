@@ -157,7 +157,6 @@ table {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACSUlEQVRIibWVv2sUQRTHP288IYh6m6QQhMxeNhDwRxEiKjaKhfgXiIVgo0UQ/AOCYGOZP0AsLCLYCAGxsLCxEMTC2AhXHDi53WuiEM3Bgcep+yzu9m53b89TvHsw7Jvd73vzfd83MyuAYYqWJI9HfI8n4ecrMJP2/7TAf5uMShhYOyfIGmAUnrkorAW2cg7Uc1H46l8XSPTq92TR+hcN8khFd1HZAj0K3AI6wEvV+N5Oo9EuiM/4efbxACAADpX3oA+AM8B54CwwJ2LeBL6/PK6CA71MQ2PW8yzoGnAKuC/IuovC79+azR9HyuUXBmkBm7Nlb2/e8z5+bTYlpUrfz0sEYIIFewgjD1FOAzdcFFaLyg+svwxsAjURufsprLfGSUTg+6uIbKN8UZELveRQcFZcFNYUuQTsqup2YP3VPCazixYXKiURfQ1y0kX1+dHKDltg/T2giupl14h+9uVIsYt3GvWOYq4C7RTj+C/9NnDFNaJO+n0pz0RVY5H+NO6xKwG3gevAPrDhovBtGgO9jpKNzR9tIwOUSY07veTrdJv6dKnb4DSmKM6kP8RArKoZBr3nCYHHLgrfuSh8DnwAsTlMJk/ij7t3BoGSTiLFmILYdA8MQFci7c/7pgMMkptnzYyadEsrliiLGWYf070U85jhXfRL4nYJqQXW3xDkc5e8roB4S7ZyHECVZeDakq2sAKhwDNXqwZmZdn7x9FUxOHC24gl6E+QwCSopLPGTNiiAtoAnLgr384RhWMep/9EmakO7aBo2VYl+A4Mm34qoxtehAAAAAElFTkSuQmCC") no-repeat left center transparent;
   background-size: 70% 70%;
 }
-
 .searchButton {
   max-width: 70%;
   text-align: center;
@@ -278,16 +277,9 @@ table {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACDElEQVRIibWVv2sUQRTHP28IhwQbBwQJJILIod0hQRA0FpmkUYK1heL4F0gqKwkp/APkiqAuWsRey8sqJNooQUQMSAhplBRXrId2EWYsdvdud90fBHIPHnzv/bz5zts3AijGKGlxV+F3x4GLJ1DHjesa5EQba7SxpspfJlJXMJVT8/eUiHSA94npuvd8/vU2qKL2vwZpYPFOlDb2AvASOAl8AVHgO8Bv4G4UBt8L+TlcbJATbewUwkc8D51yrwa9Fw7g9OJ95Zy/7eExcCUKg59VDVJQqtrYNW3sao1/VRu7VlcjS0mqAE7P20lgCehm7QXcBZb0gp2siim74NgpzAL70eF0P2fPSPR3ug/s45ktqTPkqYqmSyDbbK2U+WPb5goI20CnpBbUUQRcBL9TYs9jz04ce0SKBM6D7BbtJXgXaFfFFD9tBaizc3eUhzb4PWomJFbZA2kz96h2inJH+9OamAEcSg6aKHJODsA73foxcxSKbgG9qPe8cVMO3j1zQC/JaaZIG3sOWAaeNNOTqNAVWE5yc77cqtDGbgCXgUNBPnjiZQXQhD3+KtACPkVhsJDWnchyIyLrwHqaiAcvgPc3gCkPT5NyDzx8Q9gYteI1yOjXaBqHJ6h7B84Am8BX4ATxWF6LwqBflTP801mKEindiNpYDdxM7G+iMBjUxWfxWB/97B2MrdFYH/1/VN/KFqiiW+QAAAAASUVORK5CYII=") no-repeat left center transparent;
   background-size: 70% 70%;
 }
-/* div {
-  background-color: rgba(255, 255, 255, 0.836);
-  border: 3px solid rgba(29, 160, 242, 0.308);
-  border-radius: 15px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-} */
 .container {
   width: 550px;
-  max-height: 1800px;
+  max-height: 100%;
   background-color: rgba(29, 160, 242, 0.322);
   box-shadow: #ffffff44 0px 0px 40px 0px;
   border: 3px solid white;
@@ -346,14 +338,15 @@ h6 {
   border: 3px solid rgba(29, 160, 242, 0.637);
 }
 .shark {
-  width: 375px;
+  width: 100px;
   font-family: Helvetica Neue;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 17px;
+  font-weight: 500;
   border-radius: 15px;
   margin: 5px 5px;
   color: rgba(9, 83, 129, 0.747);
   background-color: white;
+  cursor: pointer;
 }
 .message {
   width: 375px;
@@ -373,9 +366,6 @@ h6 {
   color: #4d4d4d79;
   background-color: white;
 }
-.hover {
-  color: green;
-}
 .left {
   width: 30%;
   margin: 10px;
@@ -393,14 +383,13 @@ h6 {
 }
 .right {
   width: 30%;
-  margin: 10px;
   border: none;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0);
   text-align: center;
   min-width: 200px;
   height: 1800px;
-  max-height: 70%;
+  max-height: 100%;
 }
 .ads {
   color: rgba(255, 255, 255, 0.459);
