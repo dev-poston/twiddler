@@ -26,7 +26,7 @@
     <div class="threeColumn">
       <div class="left">
         <div class="navBox">
-            <a class="homeButton" href="indexTest.html">Home</a>
+            <a class="homeButton" href="#">Home</a>
             <br>
             <a class="searchButton" href="#">Search</a>
             <br>
@@ -37,29 +37,45 @@
       </div>
       <div class="container">
         <script>
-          $(document).ready(function(){
-            var $body = $('.container');
-            var index = streams.home.length - 1;
-            while(index >= 0){
-              var tweet = streams.home[index];
-              var $shark = $('<div class="shark"></div>');
-              var $tweet = $('<div class="sharks"></div>');
-              var $message = $('<div class="message"></div>');
-              var $date = $('<div class="date"></div>');
-              $shark.html('@' + tweet.user);
-              $message.html(tweet.message);
-              $date.html(tweet.created_at);
-              $shark.appendTo($tweet);
-              $message.appendTo($tweet);
-              $date.text(String(tweet.created_at).slice(0,24));
-              $date.appendTo($tweet)
-              $tweet.appendTo($body);
-              index -= 1;
+          $(document).ready(function() {
+            var update = function() {
+              for (var i = 0; i < streams.home.length; i++) {
+                streams.home[i].created_at = streams.home[i].created_at;
+              }
             }
+            var $body = $('.container');
+            $body.html('');
+            var populate = function() {
+              $($body).empty();
+              update();
+              var index = streams.home.length - 1;
+              while(index >= 0){
+                var tweet = streams.home[index];
+                var $shark = $('<div class="shark"></div>');
+                var $tweet = $('<div class="sharks"></div>');
+                var $message = $('<div class="message"></div>');
+                var $date = $('<div class="date"></div>');
+                $shark.html('@' + tweet.user);
+                $message.html(tweet.message);
+                $date.html(tweet.created_at);
+                $shark.appendTo($tweet);
+                $message.appendTo($tweet);
+                $date.text(String(tweet.created_at).slice(0,24));
+                $date.appendTo($tweet);
+                $tweet.prependTo($body);
+                index -= 1;
+              }
+            }
+            populate();
+            $(function() {
+              $(".homeButton").click(function () {
+                populate();
+                filter();
+              })
+            });
             var filter = function() {
               $(".shark").click(function () {
                 var filtered = (streams.home).filter(userName => userName.user === ($(this).text().slice(1)));
-                console.log(this);
                 $($body).empty();
                   for (var i = 0; i < filtered.length; i++){
                     var tweet = filtered[i];
@@ -72,8 +88,8 @@
                     $message.text(tweet.message);
                     $message.appendTo($tweet);
                     $date.text(String(tweet.created_at).slice(0,24));
-                    $date.appendTo($tweet)
-                    $tweet.appendTo($body);
+                    $date.appendTo($tweet);
+                    $tweet.prependTo($body);
                 }
               });
             };
