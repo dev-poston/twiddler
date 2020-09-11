@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
   </head>
-  <body> 
+  <body>
       <header>
         <br>
         <div class="logo">
@@ -18,7 +18,7 @@
           <h6>It's what's happening... for SHARKS</h6>
         </div>
       </header>
-      <br>
+        <br>
         <div class="adsTop">
           <image class="adsTop" src="sharkbanner.jpg"></image>
         </div>
@@ -62,7 +62,7 @@
                 $message.appendTo($tweet);
                 $date.text(String(tweet.created_at).slice(0,24));
                 $date.appendTo($tweet);
-                $tweet.prependTo($body);
+                $tweet.appendTo($body);
                 index -= 1;
               }
             }
@@ -77,19 +77,19 @@
               $(".shark").click(function () {
                 var filtered = (streams.home).filter(userName => userName.user === ($(this).text().slice(1)));
                 $($body).empty();
-                  for (var i = 0; i < filtered.length; i++){
-                    var tweet = filtered[i];
-                    var $tweet = $('<div class="sharks"></div>');
-                    var $user = $('<div class="shark"></div>');
-                    var $message = $('<div class="message"></div>');
-                    var $date = $('<div class="date"></div>');
-                    $user.text('@' + tweet.user);
-                    $user.appendTo($tweet);
-                    $message.text(tweet.message);
-                    $message.appendTo($tweet);
-                    $date.text(String(tweet.created_at).slice(0,24));
-                    $date.appendTo($tweet);
-                    $tweet.prependTo($body);
+                for (var i = 0; i < filtered.length; i++){
+                  var tweet = filtered[i];
+                  var $tweet = $('<div class="sharks"></div>');
+                  var $user = $('<div class="shark"></div>');
+                  var $message = $('<div class="message"></div>');
+                  var $date = $('<div class="date"></div>');
+                  $user.text('@' + tweet.user);
+                  $user.appendTo($tweet);
+                  $message.text(tweet.message);
+                  $message.appendTo($tweet);
+                  $date.text(String(tweet.created_at).slice(0,24));
+                  $date.appendTo($tweet);
+                  $tweet.prependTo($body);
                 }
               });
             };
