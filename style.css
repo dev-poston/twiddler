@@ -383,6 +383,7 @@ h6 {
 }
 .right {
   width: 30%;
+  margin: 0 auto;
   border: none;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0);
@@ -392,11 +393,13 @@ h6 {
   max-height: 100%;
 }
 .ads {
+  display: block;
   color: rgba(255, 255, 255, 0.459);
-  font-size: 16px;;
+  font-size: 16px;
+  margin: 10px auto;
   text-align: center;
   max-width: 70%;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   border: none;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -405,4 +408,6 @@ h6 {
   max-height: 100%;
   border: none;
   background-color: rgba(255, 255, 255, 0);
+  margin: 0 auto;
+  text-align: center;
 }
